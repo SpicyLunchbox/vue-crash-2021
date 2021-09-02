@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "prettier": "^1.19.1",
     "vue": "^3.0.0",
     "vue-loader-v16": "npm:vue-loader@^16.5.0"
   },
