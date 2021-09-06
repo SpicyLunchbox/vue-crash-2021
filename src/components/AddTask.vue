@@ -42,7 +42,7 @@ export default {
 			}
 
 			const newTask = {
-				id: Math.floor(Math.random() * 100000),
+				// id: Math.floor(Math.random() * 100000),
 				/*You wouldn't want to do this in an actual app, you would get repeating IDs*/
 				text: this.text,
 				day: this.day,
