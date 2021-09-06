@@ -2,6 +2,7 @@
 	<header>
 		<h1>{{ title }}</h1>
 		<Button
+			v-show="homePage"
 			@btn-click="$emit('toggle-add-task')"
 			:text="showAddTask ? 'Close' : 'Add Task'"
 			:color="showAddTask ? 'red' : 'green'"
@@ -20,6 +21,15 @@ export default {
 	},
 	components: {
 		Button,
+	},
+	computed: {
+		homePage() {
+			if (this.$route.path === "/") {
+				return true;
+			} else {
+				return false;
+			}
+		},
 	},
 };
 // lot of interesting ways to set up props in vue.js, check 31:30 on the vue crash course https://www.youtube.com/watch?v=qZXt1Aom3Cs&list=LL&index=6
